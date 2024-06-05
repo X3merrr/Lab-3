@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div {
+        width: 150px;
+        height: 150px;
+        box-shadow: 5px 5px 16px black;
+        border: 1px solid;
+        text-align: center;
+        margin: auto;
+    }
+    html {
+        background-color: #f0f0f0;
+        height: 100%;
+    }
+    body{
+        height: 99%;
+    }
+    .container{
+        display: flex;
+        height: 100%;
+    }
+    .anim {
+        margin:auto;
+        background-color: red;
+        border:#f0f0f0;
+        width: 250px;
+        height: 250px;
+        animation: mig 1s infinite alternate;
+    }
+    @keyframes mig {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    }
+    </style>
+</head>
+
+<!-- 19 -->
+<body>
+    <div>
+        Я блок с тенью
+    </div>
+</body>
+
+<!-- 20 -->
+<style>
+
+    html {
+
+        background-color: #f0f0f0;
+
+    }
+
+</style>
+
+<!-- 21 -->
+<body>
+    <div class="container">
+
+        <input class="anim" type="submit">
+
+    </div>
+</body>
+
+
+
+
+</html>

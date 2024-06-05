@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        .outlineTry {
+            outline: 2px dotted rgb(170, 240, 170);
+            border: none;
+            height: 100px;
+        }
+        html {
+            height: 100%;
+        }
+        .container-for-container {
+            height: 100%;
+            display: flex;
+        }
+        .containerr {
+            width: 500px;
+            margin: auto;
+        }
+        .container p {
+            text-align: center;
+        }
+
+        .nav {
+            display: flex;
+            background-color: rgb(49, 55, 109);
+        }
+        a {
+            padding: 15px 40px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            transition: all 0.3s;
+        }
+        a:hover {
+            color: rgb(188, 188, 255);
+        }
+        .nav_heads {
+            margin-right: auto;
+            margin-left: auto;
+            padding: 15px;
+            display: flex;
+        }
+        .dropList {
+            display: none;
+            position: absolute;
+            min-width: 100%;
+        }
+        .dropList a {
+            color: rgb(255, 255, 255);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            background-color: #69698f;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        .dropDown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropDown:hover .dropList {
+            display: block;
+        }
+        .dropList a:hover {
+            background-color: #6f8399;
+        }
+
+        .containerr p {
+            font-family: monospace;
+            text-align: center;
+            text-shadow: 1px 2px 5px rgb(3, 32, 192);
+            font-size: 24px;
+            animation: 1s infinite alternate appear;
+        }
+        @keyframes appear {
+        0% {
+            opacity: 0;
+        }
+        25%{
+            opacity: 0.25;
+        }
+        50%{
+            opacity: 0.5;
+        }
+        75%{
+            opacity: 0.75;
+        }
+        100%{
+            opacity: 1;
+        }
+        }
+
+        .heading {
+            font-size: 18px;
+            margin: 15px;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<!-- 31 -->
+<body>
+    <div class="container">
+        <input class="outlineTry" type="text">
+    </div>
+</body>
+
+<!-- 32, 34, 35 -->
+<body>
+    <div class="container-for-container">
+        <div class="containerr">
+            <p>Best Nightcore Mix 2024 ♫ Gaming Music Mix ♫ New Music 2024 EDM Gaming Music</p>
+        </div>
+    </div>
+</body>
+
+<!-- 33 -->
+<body>
+    <div class="nav">
+        <div class="nav_heads">
+            <div>
+                <a href="">Главная</a>
+            </div>
+            <div class="dropDown">
+                <a href="" class="dropMenu">Меню</a>  
+                <div class="dropList">
+                    <a href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                </div>
+            </div>
+             <div>
+                <a href="">Контакты</a>
+             </div>
+             <div>
+                <a href="">О нас</a>
+             </div>
+        </div>
+    </div>
+</body>
+
+<!-- 36 -->
+<body>
+    <h1 class="heading">Я первый</h1>
+    <h2 class="heading">Я второй</h2>
+    <h3 class="heading">Я третий</h3>
+    <h4 class="heading">Я четвертый</h4>
+    <h5 class="heading">Я пятый</h5>
+    <h6 class="heading">Я шестой</h6>
+</body>
+</html>

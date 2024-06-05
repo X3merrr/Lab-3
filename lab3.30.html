@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: monospace;
+        }
+        html {
+            height: 100%;
+        }
+        body {
+            height: 100%;
+        }
+        .container {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        ul {
+            list-style: none;
+        }
+        li {
+            font-size: 22px;
+            padding: 10px 0;
+        }
+        li:first-child {
+            padding-top: 30px;
+        }
+        li:last-child {
+            padding-bottom: 30px;
+        }
+        input {
+            border: none;
+            height: 30px;
+            min-width: 350px;
+            width: 100%;
+            text-indent: 10px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        button {
+            border: none;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%, 0);
+            padding: 15px;
+            width: 150px;
+            border-radius: 16px;
+            font-size: 24px;
+        }
+        .registration {
+            background-color: rgb(2, 2, 3);
+            padding: 25px 60px 25px 60px;
+            border-radius: 16px;
+            max-width: 350px;
+        }
+        h1 {
+            display: flex;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: bold;
+            color: white;
+            border-bottom: 1px white solid;
+        }
+        #passwordHint {
+            font-size: 12px;
+            text-align: justify;
+            margin-top: 10px;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<!-- 30 -->
+<body>
+    <div class="container">
+        <form id="registration" class="registration">
+            <h1>Регистрация</h1>
+            <ul>
+                <li>
+                    <input id="name" type="text" placeholder="Имя">
+                </li>
+                <li>
+                    <input id="login" type="text" placeholder="Логин">
+                </li>
+                <li>
+                    <input id="email" type="email" placeholder="Почта">
+                </li>
+                <li>
+                    <input id="password" type="password" placeholder="Пароль">
+                    <p id="passwordHint">*Пароль дожен содержать хотя бы один заглавный символ, один строчный символ и хотя бы одну цифру и быть длиной не менее 6-ти символов</p>
+                </li>
+                <li>
+                    <input id="passwordRepeat" type="password" placeholder="Повторите Пароль">
+                </li>
+            </ul>
+            <button type="submit" form="registration">Готово</button>
+        </form>
+</div>
+</body>
+</html>
